@@ -232,7 +232,7 @@ Setup は Claude Code、Claude Desktop、Codex、Cursor、Gemini CLI、Windsurf�
   "mcpServers": {
     "rea": {
       "command": "npx",
-      "args": ["-y", "rea-agents@5.0.0", "mcp"]
+      "args": ["-y", "rea-agents@6.0.0", "mcp"]
     }
   }
 }
