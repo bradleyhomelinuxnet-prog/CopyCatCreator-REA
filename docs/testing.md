@@ -1439,13 +1439,13 @@ provider workflows and the Android smoke test retain their explicit triggers.
 
 CI exercises the pinned Node.js runtime on native hosted runners:
 
-| Host                  | Runner             | Baseline checks                                                                             |
-| --------------------- | ------------------ | ------------------------------------------------------------------------------------------- |
-| Linux x64             | `ubuntu-latest`    | Installed package and real Node Inspector CLI/MCP                                           |
-| Linux arm64 (aarch64) | `ubuntu-24.04-arm` | Installed package and real Node Inspector CLI/MCP                                           |
-| macOS 15 arm64        | `macos-15`         | Installed package and real Node Inspector CLI/MCP                                           |
-| macOS 15 x64          | `macos-15-intel`   | Installed package and real Node Inspector CLI/MCP (dispatch, release and `ci:full`)         |
-| Windows x64           | `windows-latest`   | Curated capabilities, native controls, installed package and real Node Inspector CLI/MCP    |
+| Host                  | Runner             | Baseline checks                                                                          |
+| --------------------- | ------------------ | ---------------------------------------------------------------------------------------- |
+| Linux x64             | `ubuntu-latest`    | Installed package and real Node Inspector CLI/MCP                                        |
+| Linux arm64 (aarch64) | `ubuntu-24.04-arm` | Installed package and real Node Inspector CLI/MCP                                        |
+| macOS 15 arm64        | `macos-15`         | Installed package and real Node Inspector CLI/MCP                                        |
+| macOS 15 x64          | `macos-15-intel`   | Installed package and real Node Inspector CLI/MCP (dispatch, release and `ci:full`)      |
+| Windows x64           | `windows-latest`   | Curated capabilities, native controls, installed package and real Node Inspector CLI/MCP |
 
 macOS x64 is the slowest package host. Ordinary PRs and main pushes omit it,
 so darwin x64 installed-package and Inspector regressions surface in full
